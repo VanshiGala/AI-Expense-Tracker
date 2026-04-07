@@ -1,11 +1,19 @@
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+
+import Dashboard from "./pages/Dashboard";
+import AddExpense from "./pages/AddExpense";
 
 function App() {
   return (
-    
-      <>
-      <h1>Working</h1>
-      </>
-  
+   
+      <Routes>
+        <Route path="/" element={<Login />} />
+     
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/add" element={<AddExpense />} />
+      </Routes>
+   
   );
 }
 
